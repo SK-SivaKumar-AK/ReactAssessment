@@ -78,7 +78,7 @@ const Header = ({searchQuery , handleSearch , totalFavorites}) => {
         </div>
         <div className="row align-items-center">
             <div className="col-8">
-                <input className="form-control mt-3" type="search" placeholder="Search" aria-label="Search" style={{ marginLeft: '10px', height: '40px' }}/>
+                <input className="form-control mt-3" type="search" placeholder="Search" aria-label="Search" style={{ marginLeft: '10px', height: '40px' }} value={searchQuery} onChange={(e) => handleSearch(e.target.value)}/>
             </div>
             <div className="col-3 d-flex">
                 <i className="bi bi-cart position-relative fs-5 ms-2 mt-4">
